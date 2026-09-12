@@ -1,0 +1,38 @@
+services:
+  - type: worker
+    name: outlawxmusic
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeploy: true
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: LOGGER_ID
+        sync: false
+      - key: MONGO_URL
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: SESSION
+        sync: false
+      - key: SESSION2
+        sync: false
+      - key: SESSION3
+        sync: false
+      - key: BRAND_NAME
+        value: "˹ᴏᴜᴛʟᴀᴡ ꭙ ᴍᴜsɪᴄ˼ ♪ !"
+      - key: BRAND_TAGLINE
+        value: "Your Vibe. Your Music. Your Outlaw."
+      - key: OWNER_NAME
+        value: "𝐀𝐍 𝐍𝐚𝐫𝐜𝐢𝐬𝐬𝐗"
+      - key: OWNER_USERNAME
+        value: "AstraVerse0"
+      - key: SUPPORT_CHAT
+        value: "https://t.me/+2YK9-ERIXPI1YmI1"
+      - key: SUPPORT_CHANNEL
+        value: "https://t.me/YuniteCrew"
